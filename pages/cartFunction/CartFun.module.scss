@@ -1,0 +1,24 @@
+ .cart{
+    border: 2px solid rgb(221, 224, 226);
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+.button{
+    justify-content: center;
+    align-items: center;
+}
+.disc{
+    justify-content: space-between;
+    background-color: gainsboro;
+    width: 1000px;
+    flex-wrap: wrap;
+   padding-left: 10px;
+    margin-left: 1100px;
+    margin-bottom: 50px;
+ 
+
+}
+
+

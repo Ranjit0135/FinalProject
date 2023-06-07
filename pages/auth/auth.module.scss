@@ -1,0 +1,87 @@
+
+.auth {
+  background-image: url("https://wallpapercave.com/wp/wp2940019.jpg");
+    min-height: 80vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+  
+    .img {
+      animation: slide-down 0.5s ease;
+   
+
+    }
+  
+    .form {
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 1.5rem;
+      animation: slide-up 0.5s ease;
+      background-color: rgb(210, 215, 199);
+      h2 {
+       color: red;
+        text-align: center;
+      }
+      form {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          //  display: block;
+          font-size: 1.6rem;
+          font-weight: 300;
+          padding: 1rem;
+          margin: 1rem auto;
+          width: 300px;
+          border: 3px solid #777;
+          border-radius: 10px;
+          
+        }
+        .btn{
+align-items: center;
+        }
+        .links {
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 0;
+        }
+  
+        p {
+          text-align: center;
+          margin: 1rem;
+        
+        }
+      }
+      .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+      }
+    }
+  
+    @keyframes slide-up {
+      0% {
+        transform: translateY(-5rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes slide-down {
+      0% {
+        transform: translateY(5rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .img {
+      display: none;
+    }
+  }
